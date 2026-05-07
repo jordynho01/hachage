@@ -2,9 +2,9 @@ def mon_hachage_perso(chaine):
     # 1. Valeur initiale (un nombre premier est préférable)
     hash_value = 5381
     
-    # Masque pour simuler un entier de 32 bits (Python gère les entiers arbitrairement grands)
-    # 0xFFFFFFFF correspond à (2^32 - 1)
-    mask = 0xFFFFFFFFFFFFFFFFFF
+    # Masque pour simuler un entier de 64 bits (Python gère les entiers arbitrairement grands)
+    # 0xFFFFFFFF correspond à (2^64 - 1)
+    mask = 0xFFFFFFFFFFFFFFFFF
 
     for char in chaine:
         # 2. Récupérer le code Unicode du caractère
